@@ -2,6 +2,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff;
 }
 
 .mainOuter{
@@ -11,4 +12,19 @@
     width: 100vw;
     height: 100vh;
     background: #0f0038;
+}
+.headText{
+    margin: 20px 0px;
+    text-align: center;
+    color: #f3f3f3;
+}
+.subText{
+    text-align: center;
+    color: #d9d9d9;
+}
+
+.chartImg{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
 }
