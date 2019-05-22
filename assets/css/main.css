@@ -16,7 +16,7 @@
 .headOuter{
     position: absolute;
     top:20px;
-    left: 50px;
+    left: 35px;
 }
 .headText{
     font-size: 84px;
@@ -52,6 +52,6 @@
     transition: background 0.5s, box-shadow 0.5s;
 }
 .viewBtn:hover{
-    background: #efefef;
+    background: #c4c4c4;
     box-shadow: 0 0 20px #000;
 }
