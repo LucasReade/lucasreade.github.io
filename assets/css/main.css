@@ -27,11 +27,6 @@
     color: #0f0038;
 }
 
-.chartImg{
-    display: block;
-    width: 60%;
-    margin: 0 auto;
-}
 
 .viewBtn{
     position: absolute;
@@ -54,4 +49,20 @@
 .viewBtn:hover{
     background: #c4c4c4;
     box-shadow: 0 0 20px #000;
+}
+
+
+@media (max-width: 675px){
+
+    .headOuter{
+        top:10px;
+        left: 20px;
+    }
+
+    .headText{
+        font-size: 45px;
+    }
+    .subText{
+
+    }
 }
