@@ -38,7 +38,7 @@ body {
         }
 
     .content {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;;
     }
 
@@ -142,8 +142,25 @@ body {
                 margin: 0 25px 0 0;
             }
 
+@media (max-width: 1200px){
+    .content {
+        padding: 0 25px;
+    }
+}          
 
 @media (max-width: 675px){
+
+    .item , .item.inverted {
+        flex-direction: column-reverse;
+    }
+        .item > .info , .item.inverted > .info {
+            margin: 0;
+            width: auto;
+        }
+        .item > .demo, .item.inverted > .demo {
+            margin: 0 0 10px 0;
+            width: auto;
+        }
 
 
 }
