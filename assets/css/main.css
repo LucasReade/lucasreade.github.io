@@ -1,5 +1,10 @@
+@font-face {
+	font-family: RhodiumLibre;
+	src: url("../RhodiumLibre-Regular.ttf");
+}
+
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: RhodiumLibre, sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -11,36 +16,132 @@ body {
 
 .mainOuter {
     position: absolute;
-    display: flex;
-    flex-direction: row;
     width: 100%;
     min-height: 100%;
+    background: #5F0616;
 }
-    .sidebar {
-        width: 20%;
-        min-width: 50px;
-        background-color: #1f143f;
-        display: flex;
+    .logo {
+        width: 350px;
+        margin: 60px auto;
+        text-align: center;
+        color: #fff;
     }
-        .navMenu {
-            flex: auto;
-            list-style: none;
-            margin: 0;
+        .logo p {
+            font-size: 44px;
+            line-height: 40px;
         }
-            .mugshot {
-                height: 45px;
-                width: 45px;
-                margin: 15px;
-                border-radius: 50%;
-            }
-        .socialLinks {
-
+        .logo hr {
+            margin: 10px 0;
+        }
+        .logo span {
+            font-size: 18px;
         }
 
     .content {
-        flex: auto;
-        background-color: #dfe2dc;
+        width: 1200px;
+        margin: 0 auto;;
     }
+
+        .biochat {
+            display: flex;
+            flex-direction: row;
+        }
+            .biochat >.chathead {
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                border: solid 5px #176C16;
+                object-fit: fill;
+            }
+            .biochat > .chat {
+                flex: auto;
+                position: relative;
+                background: #fff;
+                border-radius: 10px;
+                margin: 0px 0px 0px 30px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .biochat > .chat:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 0;
+                height: 0;
+                border: 27px solid transparent;
+                border-right-color: #fff;
+                border-left: 0;
+                margin-top: -27px;
+                margin-left: -27px;
+            }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            margin: 100px 0;
+            min-height: 100px;
+        }
+        .item.inverted {
+            flex-direction: row-reverse;
+        }
+            .item > .info {
+                width: 50%;
+                color: #fff;
+                margin: 0 25px 0 0;
+            }
+            .item.inverted > .info {
+                margin: 0 0 0 25px;
+            }
+                .info > .title {
+                    display: flex;
+                    flex-direction: row;
+                    line-height: 30px;
+                }
+                    .info > .title > .value {
+                        flex: auto;
+                    }
+                    .info > .title > .tags {
+
+                    }
+                        .tags > span {
+                            text-align: center;
+                            font-size: 12px;
+                            display: inline-block;
+                            padding: 0px 10px;
+                            margin: 0 0px;
+                            border-radius: 15px;
+                            background-color: #fff;
+                            color: #000;
+                            min-width: 35px;
+                        }
+                            .tags > span.api{background-color: #96c5fd;}
+                            .tags > span.frontend{background-color: #11b339;}
+                            .tags > span.plugin{background-color: #ffff00;}
+                            .tags > span.app{background-color: #2f3241; color: #fff;}
+                            .tags > span.leather{background-color: #ad5353; color: #fff;}
+
+                .info > .infotext {
+                    font-size: 14px;
+                    margin-top: 10px;
+                    display: block;
+                }
+                    .infotext > a {
+                        display: block;
+                        color: #11b339;
+                    }
+            .item > .demo {
+                width: 50%;
+                box-sizing: border-box;
+                border: solid 5px #fff;
+                background: #fff;
+                border-radius: 10px;
+                margin: 0 0 0 25px;
+            }
+            .item.inverted > .demo {
+                margin: 0 25px 0 0;
+            }
+
 
 @media (max-width: 675px){
 
