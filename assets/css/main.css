@@ -160,6 +160,7 @@ body {
         .item > .demo, .item.inverted > .demo {
             margin: 0 0 10px 0;
             width: auto;
+            max-height: 350px;
         }
 
 
